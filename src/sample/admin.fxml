@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminController">
+   <children>
+      <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+            <Text layoutY="50.0" text="用户名" textAlignment="CENTER" wrappingWidth="95.0" />
+              <Text layoutY="81.0" text="密码" textAlignment="CENTER" wrappingWidth="94.9999988079071" />
+               <TextField fx:id="u" layoutX="95.0" layoutY="29.0" prefHeight="30.0" prefWidth="162.0" />
+               <TextField fx:id="p" layoutX="95.0" layoutY="60.0" prefHeight="30.0" prefWidth="162.0" />
+               <Button fx:id="add" layoutX="379.0" layoutY="29.0" mnemonicParsing="false" text="添加" />
+               <Button fx:id="update" layoutX="379.0" layoutY="70.0" mnemonicParsing="false" text="修改" />
+               <Button fx:id="del" layoutX="379.0" layoutY="110.0" mnemonicParsing="false" text="删除" />
+               <Button fx:id="reset" layoutX="379.0" layoutY="151.0" mnemonicParsing="false" text="重置" />
+
+          </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="265.0" prefWidth="598.0">
+               <children>
+                  <TableView fx:id="tableview" layoutY="-2.0" prefHeight="196.0" prefWidth="598.0">
+                    <columns>
+                      <TableColumn fx:id="c1" prefWidth="186.0" text="C1" />
+                      <TableColumn fx:id="c2" prefWidth="220.0" text="C2" />
+                        <TableColumn fx:id="c3" prefWidth="190.0" text="类型" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+     <!-- <Pagination fx:id="pagination" layoutX="200.0" layoutY="400.0" prefHeight="15.0" prefWidth="162.0" />-->
+   </children>
+</AnchorPane>

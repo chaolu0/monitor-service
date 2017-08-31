@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="monitor:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/monitor_jar</output-path>
+    <root id="archive" name="monitor.jar">
+      <element id="module-output" name="monitor" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/xom-1.2.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/ezmorph-1.0.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/commons-lang-2.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/json-lib-2.4-jdk15.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/commons-logging-1.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/commons-beanutils-1.8.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/commons-collections-3.2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/mysql-connector-java-5.1.42-bin.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
