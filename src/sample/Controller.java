@@ -23,7 +23,6 @@ import java.util.ResourceBundle;
 import java.util.Vector;
 
 public class Controller implements Initializable {
-
     private ObservableList<String> mObList;
     @FXML
     private ListView<String> listView;

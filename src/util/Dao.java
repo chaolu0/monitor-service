@@ -17,12 +17,6 @@ public class Dao {
         jdbcUtil = JdbcUtil.getInstance();
     }
 
-    /**
-     * 条件语句执行操作
-     *
-     * @param sql
-     * @return
-     */
     public List<UserBean> query(String sql) {
         List<UserBean> stUsers = new ArrayList<>();
         try {
@@ -49,12 +43,6 @@ public class Dao {
         return stUsers;
     }
 
-    /**
-     * 单条数据查询
-     *
-     * @param user
-     * @return
-     */
     public UserBean find(UserBean user) {
         if (user != null) {
             if (user.getUsername() != null && user.getPassword() != null) {

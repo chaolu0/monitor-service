@@ -14,7 +14,6 @@ public class JdbcUtil {
 
     public static JdbcUtil getInstance() {
         if (jdbcUtil == null) {
-            // 给类加锁 防止线程并发
             synchronized (JdbcUtil.class) {
                 if (jdbcUtil == null) {
                     jdbcUtil = new JdbcUtil();
@@ -26,7 +25,6 @@ public class JdbcUtil {
 
     private JdbcUtil(){}
 
-    // 通过静态代码块注册数据库驱动，保证注册只执行一次
     static {
         try {
             Class.forName(driver);
